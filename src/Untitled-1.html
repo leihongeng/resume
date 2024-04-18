@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人简历</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Noto Sans SC', sans-serif;
+        }
+        .resume-sidebar {
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+        .resume-main {
+            background-color: #fff;
+            padding: 20px;
+        }
+        .profile-img {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .sidebar-section {
+            margin-bottom: 30px;
+        }
+        .sidebar-section h3 {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+        .skill-list {
+            list-style: none;
+            padding-left: 0;
+            font-size: 0.9em;
+        }
+        .skill-list li {
+            margin-bottom: 5px;
+        }
+        .experience-item {
+            margin-bottom: 20px;
+        }
+        .experience-item h4 {
+            font-size: 1.1em;
+        }
+        .experience-item h5 {
+            font-size: 0.9em;
+            font-weight: normal;
+        }
+        .experience-item p {
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div id="app" class="container mt-3">
+        <div class="row">
+            <div class="col-md-4 resume-sidebar">
+                <img :src="resume.photo" alt="Profile Photo" class="profile-img">
+                <div class="sidebar-section">
+                    <h3>联系方式</h3>
+                    <p>{{ resume.contact.phone }}</p>
+                    <p>{{ resume.contact.email }}</p>
+                    <p><a :href="resume.contact.github">{{ resume.contact.github }}</a></p>
+                </div>
+                <div class="sidebar-section">
+                    <h3>技能</h3>
+                    <ul class="skill-list">
+                        <li v-for="skill in resume.skills">{{ skill }}</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-8 resume-main">
+                <h1>{{ resume.name }}</h1>
+                <p><strong>{{ resume.position }}</strong></p>
+                <p>{{ resume.summary }}</p>
+
+                <hr>
+
+                <div class="experience-section">
+                    <h3>工作经验</h3>
+                    <div class="experience-item" v-for="job in resume.jobs">
+                        <h4>{{ job.role }}</h4>
+                        <h5>{{ job.period }}</h5>
+                        <p v-for="duty in job.duties">{{ duty }}</p>
+                    </div>
+                </div>
+
+                <div class="education-section">
+                    <h3>教育背景</h3>
+                    <div v-for="education in resume.educations">
+                        <h4>{{ education.degree }}</h4>
+                        <h5>{{ education.period }}</h5>
+                        <p>{{ education.school }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Vue.js -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js"></script>
+    <!-- Your Script -->
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                resume: {
+                    photo: 'path_to_your_photo.jpg',
+                    name: '姓名',
+                    position: '职位',
+                    summary: '这里是你的个人简介。',
+                    contact: {
+                        phone: '手机号码',
+                        email: '电子邮件地址',
+                        github: 'Github链接'
+                    },
+                    skills: [
+                        '技能一',
+                        '技能二',
+                        // 更多技能...
+                    ],
+                    jobs: [
+                        {
+                            role: '工作角色',
+                            period: '在职时间',
+                            duties: [
+                                '职责一',
+                                '职责二',
+                                // 更多职责...
+                            ]
+                        },
+                        // 更多工作经验...
+                    ],
+                    educations: [
+                        {
+                            degree: '学位',
+                            period: '学习时间',
+                            school: '学校'
+                        },
+                        // 更多教育背景...
+                    ]
+                }
+            }
+        });
+    </script>
+</body>
+</html>

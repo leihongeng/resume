@@ -1,188 +1,181 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./layui/css/layui.css"  media="all">
+  <link rel="stylesheet" href="./layui/css/layui.css" media="all">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>雷洪</title>
 </head>
 <style>
-.baseinfo{
+  .baseinfo {}
 
-}
+  body {
+    font-size: 14px;
+  }
 
-body{
-  font-size: 14px;
-}
+  .maindiv {
+    border: 0px solid;
+    position: relative;
+    margin: 0 auto;
+    width: 1000px;
+    height: 1000px;
+  }
 
-.maindiv{
-  border: 0px solid;
-  position: relative;
-  margin: 0 auto;
-  width: 1000px;
-  height: 1000px;
-}
+  .head {
+    padding: 20px;
+  }
 
-.head{
-  padding: 20px;
-}
+  .icon {
+    width: 18px;
+    height: 18px;
+    vertical-align: text-bottom;
+    padding-left: 10px;
+  }
 
-.icon{
-  width: 18px;
-  height: 18px;
-  vertical-align: text-bottom;
-  padding-left: 10px;
-}
-
-.leftdiv{
-  /* border-style: solid;
+  .leftdiv {
+    /* border-style: solid;
   border-width: 0px 1px 0px 0px; */
-  border: 1px solid;
-  width: 265px;
-  height: auto;
-  margin-top: 50px;
-  margin-left: -241px;
-  float: left;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
-  border-left-color: white;
-}
+    border: 1px solid;
+    width: 265px;
+    height: auto;
+    margin-top: 50px;
+    margin-left: -241px;
+    float: left;
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+    border-left-color: white;
+  }
 
-.bodydiv{
-  width: 69%;
-  height: 1000px;
-  margin-top: 50px;
-  float: left;
-  padding: 20px;
-}
+  .bodydiv {
+    width: 69%;
+    height: 1000px;
+    margin-top: 50px;
+    float: left;
+    padding: 20px;
+  }
 
-.educationhead{
-  width: 100%;
-  height: 20px;
-  background-color:#b0c4de;
-  border-radius:5px;
-  font-size: 12px;
-}
+  .educationhead {
+    width: 100%;
+    height: 20px;
+    background-color: #b0c4de;
+    border-radius: 5px;
+    font-size: 12px;
+  }
 
-.education{
+  .education {}
 
-}
+  .skillhead {
+    width: 100%;
+    height: 20px;
+    background-color: #b0c4de;
+    border-radius: 5px;
+    font-size: 12px;
+  }
 
-.skillhead{
-  width: 100%;
-  height: 20px;
-  background-color:#b0c4de;
-  border-radius:5px;
-  font-size: 12px;
-}
+  .wordhead {
+    width: 100%;
+    height: 20px;
+    background-color: #b0c4de;
+    border-radius: 5px;
+    font-size: 12px;
+  }
 
-.wordhead{
-  width: 100%;
-  height: 20px;
-  background-color:#b0c4de;
-  border-radius:5px;
-  font-size: 12px;
-}
+  .skill li {
+    list-style: disc;
+    font-size: 13px;
+  }
 
-.skill li{
-  list-style: disc;
-  font-size: 13px;
-}
+  .workname {
+    font-size: 18px;
+  }
 
-.workname{
-  font-size: 18px;
-}
+  .workdate {
+    padding-left: 10px;
+  }
 
-.workdate{
-  padding-left: 10px;
-}
+  .projectnamediv {
+    font-size: 15px;
+  }
 
-.projectnamediv{
-  font-size: 15px;
-}
+  .projectname {
+    font-size: 15px;
+  }
 
-.projectname{
-  font-size: 15px;
-}
+  .projectitem {
+    font-size: 14px;
+  }
 
-.projectitem{
-  font-size: 14px;
-}
+  .projectul {
+    padding-left: 20px;
+  }
 
-.projectul{
-  padding-left: 20px;
-}
-
-.itemdec{
-  font-style: italic;
-}
-
+  .itemdec {
+    font-style: italic;
+  }
 </style>
+
 <body>
   <div class="maindiv">
-      <div class="baseinfo">
-        <div class="head">
-            <img style="float: left;padding-left: 20px;width: 200px; height: 200px;" src="./images/zw.jpg" alt="雷洪">
-            <div style="float: left; padding-left: 50px;width: 685px;">
-                <span style="font-size: 34px;">雷洪</span></br></br>
-                <span>
-                  <img class="icon" src="./images/电话.png" alt="">
-                  <span>180****3483</span>
-                </span>|
-                <span>
-                  <img class="icon" src="./images/邮箱.png" alt="">
-                  <span>***@outlook.com</span>
-                </span>|
-                <span>
-                  <span>政治面貌:群众</span>|
-                </span>
-                <span>
-                  <span>户籍地:四川泸州</span>|
-                </span>
-                <span>
-                  <span>住址:成都华阳</span>
-                </span></br>
-                <span>
-                    <img class="icon" src="./images/github.png" alt="">
-                    <span>https://github.com/leihongeng</span>
-                  </span>|
-                  <span>
-                    <span>求职意向:后端开发工程师</span>
-                  </span>|
-                  <span>
-                    <span>期望薪资:10K~20K</span>
-                  </span></br></br>
-                  <span>
-                    &nbsp;&nbsp;&nbsp;&nbsp;热爱编程，6年开发经验，能够独立完成项目和产品的架构设计与开发工作（包括前后端）熟悉互联网产品前沿开发技术，有电商平台研发经历。深入理解计算机操作系统，熟悉Linux，会搭建工具以使用谷歌学习新技术。碰到技术难点会让自己兴奋，喜欢嵌入式开发（树莓派 arduino）与AI，希望从事相关工作。
-                  </span>
-            </div>
+    <div class="baseinfo">
+      <div class="head">
+        <img style="float: left;padding-left: 20px;width: 200px; height: 200px;" src="./images/zw.jpg" alt="雷洪">
+        <div style="float: left; padding-left: 50px;width: 685px;">
+          <span style="font-size: 34px;">雷洪</span></br></br>
+          <span>
+            <img class="icon" src="./images/电话.png" alt="">
+            <span>18090883483</span>
+          </span>|
+          <span>
+            <img class="icon" src="./images/邮箱.png" alt="">
+            <span>leihongeng@outlook.com</span>
+          </span>|
+          <span>
+            <span>政治面貌:群众</span>|
+          </span>
+          <span>
+            <span>户籍地:四川泸州</span>|
+          </span>
+          <span>
+            <span>住址:成都华阳</span>
+          </span></br>
+          <span>
+            <img class="icon" src="./images/github.png" alt="">
+            <span>https://github.com/leihongeng</span>
+          </span>|
+          <span>
+            <span>求职意向:高级开发工程师</span>
+          </span>|
+          <span>
+            <span>期望薪资:25K~30K</span>
+          </span></br></br>
+          <span>
+            热爱编程，野生程序员。10年项目开发经验，1年项目管理经验，能够独立完成项目和产品的架构设计与开发工作。熟悉互联网产品各种前沿开发技术，有大型电商平台研发经历。
+            对AI/物联网有浓厚兴趣。深入理解计算机操作系统，熟悉Linux，会搭建工具以使用谷歌学习新技术。
+            有较好的团队合作精神，能够快速融入团队，适应各种工作环境，有较强的学习能力和解决问题的能力。
+          </span>
         </div>
       </div>
-      <div class="leftdiv">
-        <div style="padding: 20px;">
+    </div>
+    <div class="leftdiv">
+      <div style="padding: 20px;">
         <div class="educationhead">
           <img class="icon" src="./images/大学.png" alt=""><span>教育/再教育经历</span>
         </div>
         <div class="education">
-        </br>
+          </br>
           <ul class="layui-timeline">
-              <li class="layui-timeline-item">
-                <i class="layui-icon layui-timeline-axis"></i>
-                <div class="layui-timeline-content layui-text">
-                  <div class="layui-timeline-title">2019年-自考本科-电子科技大学-软件工程(在读)</div>
-                </div>
-              </li>
             <li class="layui-timeline-item">
               <i class="layui-icon layui-timeline-axis"></i>
               <div class="layui-timeline-content layui-text">
-                <div class="layui-timeline-title">2019年-自考本科-西南财经大学-工商管理(在读)</div>
+                <div class="layui-timeline-title">2019年-自考本科-西南科技大学-软件工程</div>
               </div>
             </li>
             <li class="layui-timeline-item">
               <i class="layui-icon layui-timeline-axis"></i>
               <div class="layui-timeline-content layui-text">
-                <div class="layui-timeline-title">2019年-成考大专-国家开放大学-计算机科学与技术(在读)</div>
+                <div class="layui-timeline-title">2019年-大专-计算机科学与技术</div>
               </div>
             </li>
             <li class="layui-timeline-item">
@@ -191,170 +184,250 @@ body{
                 <div class="layui-timeline-title">2013年-北大青鸟-Java开发</div>
               </div>
             </li>
-            <li class="layui-timeline-item">
-              <i class="layui-icon layui-timeline-axis"></i>
-              <div class="layui-timeline-content layui-text">
-                <div class="layui-timeline-title">2012年-纳溪中学-高中毕业</div>
-              </div>
-            </li>
           </ul>
         </div>
         <hr>
         <div class="skillhead">
           <img class="icon" src="./images/专业知识技能.png" alt=""><span>专业知识技能</span>
         </div>
-      </br>
+        </br>
         <ul class="skill">
-          <li>熟练使用 .Net/.Net Core</li>
-          <li>熟练使用 C# 语言，熟悉 Memcache、Redis 等缓存组件与 RabbitMQ 异步处理机制。</li> 
+          <li>精通 .Net Core</li>
+          <li>熟悉Spring Boot</li>
+          <li>熟练使用 C# 语言，熟悉 Memcache、Redis 等缓存组件与 RabbitMQ 异步处理机制。</li>
           <li>了解高可用、高并发，高负载的架构，具有分布式架构的系统开发能力。</li>
           <li>熟练掌握常见的关系型数据库以及非关系型数据库，理解其使用场景及限制。</li>
           <li>熟悉 TCP/IP、DNS 等底层协议，精通 HTTP 协议，熟练掌握各种工具进行网络问题诊断。</li>
           <li>熟悉 Docker 微服务架构，Redis, Memcached 缓存技术，Nginx 负载均衡，RabbitMQ 消息队列等领域。</li>
           <li>深熟练掌握全栈开发，对后端到前端的技术原理有全面的认识，熟悉网站开发流程，能够独立搭建完整的网站。</li>
           <li>熟悉常用开发版的 Linux 服务器安装、配置和调优，熟悉常用开发环境如 Apache、MySQL、Nginx 等工具的部署、设置及调优。</li>
-          <li>有良好的代码风格，通过添加注释提高代码可读性，注重代码质量，研读多个开源项目，学习改善代码的健壮性与扩展性。</li>
+          <li>有良好的代码风格，通过添加注释提高代码可读性，非常注重代码质量，研读多个开源项目，学习改善代码的健壮性与扩展性。</li>
           <li>有大型互联网分布式系统的架构设计和开发经验，拥抱新技术，有很强的学习能力。</li>
           <li>有扎实的计算机理论基础，良好的算法与数据结构基础，了解计算机基本原理与常见机制。</li>
-          <li>熟悉CI/CD自动化发布、测试，能使用Azure DevOps自动化持续集成</li>
+          <li>熟悉CI/CD自动化发布、测试流程，能使用常用的开源框架搭建 DevOps自动化持续集成</li>
         </ul>
-
-        </div> 
       </div>
-      
-      <div class="bodydiv">
-          <div class="wordhead">
-              <img class="icon" src="./images/公司.png" alt=""><span>工作经历</span>
-            </div>
-          </br>
-            <ul class="skill" style="padding-left: 20px;">
+    </div>
 
+    <div class="bodydiv">
+      <div class="wordhead">
+        <img class="icon" src="./images/公司.png" alt=""><span>工作经历</span>
+      </div>
+      </br>
+      <ul class="skill" style="padding-left: 20px;">
+
+        <li>
+          <span class="workname">新蛋科技（成都、深圳）技术有限公司</span>
+          <span class="workdate">2020年12月08 - 至今 | 高级工程师、项目经理</span></br></br>
+          <div class="projectnamediv">
+            <span class="projectname">参与的团队和项目</span>
+            </br></br>
+            <ul class="projectul">
               <li>
-                <span class="workname">果达侠科技有限公司</span>
-                <span class="workdate">2018年11月27-至今 | 后端研发工程师</span></br></br>
-                <div class="projectnamediv">
-                  <span class="projectname">参与的产品和项目</span>
-                    <ul class="projectul">
-                      <li>
-                        <span class="projectitem">果达侠商城</span></br>
-                        <span>项目简介：<span class="itemdec">面向各大水果店店长的水果采购批发平台</span></span></br>
-                        <span>参与内容：<span class="itemdec">微服务架构中的服务开发</span></span></br>
-                        <span>项目标签：</span>
-                        <span class="layui-badge layui-bg-gray ">分布式架构</span>
-                        <span class="layui-badge layui-bg-gray ">.Net Core 3.0</span>
-                        <span class="layui-badge layui-bg-gray ">自研开发框架</span>
-                      </li>
-                      <li>
-                        <span class="projectitem">无人车库系统</span></br>
-                        <span>项目简介：<span class="itemdec">电动车无人值守车库，具有防盗、监控警报、自动开门、用户自助缴费、临停、扫码充电、包月充电、数据集中统计、多租户设计等功能</span></span></br>
-                        <span>参与内容：<span class="itemdec">设计、开发、部署实施、运维</span></span></br>
-                        <span>项目标签：</span>
-                        <span class="layui-badge layui-bg-gray ">分布式架构</span>
-                        <span class="layui-badge layui-bg-gray ">车库自动化</span>
-                        <span class="layui-badge layui-bg-gray ">.Net Core</span>
-                        <span class="layui-badge layui-bg-gray ">高性能Socket通讯</span>
-                        <span class="layui-badge layui-bg-gray ">物联网开发</span>
-                        <span class="layui-badge layui-bg-gray ">公众号</span>
-                        <span class="layui-badge layui-bg-gray ">小程序</span>
-                        <span class="layui-badge layui-bg-gray ">微信支付</span>
-                      </li>
-                      <li>
-                        <span class="projectitem">汽车贷款业务系统</span></br>
-                        <span>项目简介：<span class="itemdec">贷款业务内部员工资料上传、审核、存档系统</span></span></br>
-                        <span>参与内容：<span class="itemdec">设计、开发、部署实施、运维</span></span></br>
-                        <span>项目标签：</span>
-                        <span class="layui-badge layui-bg-gray ">流程引擎</span>
-                        <span class="layui-badge layui-bg-gray ">动态表单</span>
-                        <span class="layui-badge layui-bg-gray ">小程序</span>
-                      </li>
-                    </ul>
-                </div>
-              </li></br></br>
-
-              <li>
-                  <span class="workname">中际科技有限公司</span>
-                  <span class="workdate">2017年6月-2018年10月 | 创业公司技术负责人</span></br></br>
-                  <div class="projectnamediv">
-                    <span class="projectname">参与的产品和项目</span>
-                      <ul class="projectul">
-                        <li>
-                          <span class="projectitem">OneOffice</span></br>
-                          <span>项目简介：<span class="itemdec">基于Office365进行二次开发，在手机小程序端同步、预览、编辑PC上的Office365文档并扩展企业OA功能</span></span></br>
-                          <span>参与内容：<span class="itemdec">设计、开发、部署实施、运维</span></span></br>
-                          <span>项目标签：</span>
-                          <span class="layui-badge layui-bg-gray ">.Net</span>
-                          <span class="layui-badge layui-bg-gray ">Azure AD</span>
-                          <span class="layui-badge layui-bg-gray ">Azure Cloud</span>
-                          <span class="layui-badge layui-bg-gray ">微信小程序</span>
-                          <span class="layui-badge layui-bg-gray ">企业微信</span>
-
-                        </li>
-                        <li>
-                          <span class="projectitem">ADM管理平台</span></br>
-                          <span>项目简介：<span class="itemdec">微软AD活动目录Web管理系统，对AD管理进行包装，提供WebAPI开放平台</span></span></br>
-                          <span>参与内容：<span class="itemdec">设计、开发、部署实施、运维</span></span></br>
-                          <span>项目标签：</span>
-                          <span class="layui-badge layui-bg-gray ">.Net</span>
-                          <span class="layui-badge layui-bg-gray ">AD活动目录</span>
-                          <span class="layui-badge layui-bg-gray ">军工企业实施</span>
-                        </li>
-                      </ul>
-                  </div>
-                </li></br></br>
-
-
-                <li>
-                    <span class="workname">东方闻道科技发展有限公司</span>
-                    <span class="workdate">2016年3月-2017年6月 | 后端开发</span></br></br>
-                    <div class="projectnamediv">
-                      <span class="projectname">参与的产品和项目</span>
-                        <ul class="projectul">
-                          <li>
-                            <span class="projectitem">未来课堂3.0</span></br>
-                            <span>项目简介：<span class="itemdec">与成都七中老师合作以在线直播或者录制视频的方式远程教学，学生可以在线观看、课前预习、课后作业、远程考试等</span></span></br>
-                            <span>参与内容：<span class="itemdec">后端开发</span></span></br>
-                            <span>项目标签：</span>
-                            <span class="layui-badge layui-bg-gray ">.Net</span>
-                            <span class="layui-badge layui-bg-gray ">高性能</span>
-                            <span class="layui-badge layui-bg-gray ">高并发</span>
-                            <span class="layui-badge layui-bg-gray ">大数据存储</span>
-                            <span class="layui-badge layui-bg-gray ">数据库优化</span>
-                          </li>
-                        </ul>
-                    </div>
-                  </li></br></br>
-
-
-                  <li>
-                      <span class="workname">东谷信息技术有限公司</span>
-                      <span class="workdate">2013年11月-2016年3月 | 开发</span></br></br>
-                      <div class="projectnamediv">
-                        <span class="projectname">参与的产品和项目</span>
-                          <ul class="projectul">
-                            <li>
-                              <span class="projectitem">峨眉山旅游集团OA系统</span></br>
-                              <span>项目简介：<span class="itemdec">峨眉山旅游集团OA系统，包括人力资源管理、合同管理、车辆管理、会议室管理等</span></span></br>
-                              <span>参与内容：<span class="itemdec">前后端开发</span></span></br>
-                              <span>项目标签：</span>
-                              <span class="layui-badge layui-bg-gray ">C#</span>
-                              <span class="layui-badge layui-bg-gray ">easyUI</span>
-                              <span class="layui-badge layui-bg-gray ">ASP.NET</span>
-                            </li>
-                            <li>
-                                <span class="projectitem">公司外接项目</span></br>
-                                <span>项目简介：<span class="itemdec">分到各个开发组，实现前端页面或者后端接口</span></span></br>
-                                <span>参与内容：<span class="itemdec">前后端开发</span></span></br>
-                                <span>项目标签：</span>
-                                <span class="layui-badge layui-bg-gray ">C#</span>
-                                <span class="layui-badge layui-bg-gray ">easyUI</span>
-                                <span class="layui-badge layui-bg-gray ">ASP.NET</span>
-                                <span class="layui-badge layui-bg-gray ">学习</span>
-                              </li>
-                          </ul>
-                      </div>
-                    </li>
+                <span class="projectitem">Newegg Selling Pilot (深圳)</span></br>
+                <span>项目简介：<span class="itemdec">Newegg独立团队做的跨境电商运营和营销管理系统</span></span></br>
+                <span>项目角色：<span class="itemdec">核心开发</span></span></br>
+                <span>项目成果：<span></span>实现了卖家关心的各个平台营销数据的抓取和清洗，并根据抓取数据建立数据模型。</span></br>
+                <span>项目标签：</span>
+                <span class="layui-badge layui-bg-gray ">微服务架构</span>
+                <span class="layui-badge layui-bg-gray ">.Net 8</span>
+                <span class="layui-badge layui-bg-gray ">K8S</span>
+                <span class="layui-badge layui-bg-gray ">Python爬虫</span>
+                <span class="layui-badge layui-bg-gray ">CI/CD</span>
+                <span class="layui-badge layui-bg-gray ">AI应用</span>
+                <span class="layui-badge layui-bg-gray ">创业项目</span>
+              </li>
             </ul>
-      </div>
+          </br>
+            <ul class="projectul">
+              <li>
+                <span class="projectitem">Newegg EDI</span></br>
+                <span>项目简介：<span class="itemdec">Newegg 对外数据交换接口系统开发和维护团队</span></span></br>
+                <span>项目角色：<span class="itemdec">核心开发</span></span></br>
+                <span>项目成果：<span></span>主导对现有系统的重构和升级，使用现代化的开源方案建立了EDI.BFF.Gateway、EIP等项目和框架</span></br>
+                <span>项目标签：</span>
+                <span class="layui-badge layui-bg-gray ">微服务架构</span>
+                <span class="layui-badge layui-bg-gray ">.Net 6</span>
+                <span class="layui-badge layui-bg-gray ">K8S</span>
+                <span class="layui-badge layui-bg-gray ">Elasticsearch</span>
+                <span class="layui-badge layui-bg-gray ">Ocelot</span>
+                <span class="layui-badge layui-bg-gray ">MQ</span>
+                <span class="layui-badge layui-bg-gray ">CI/CD</span>
+                <span class="layui-badge layui-bg-gray ">高并发</span>
+                <span class="layui-badge layui-bg-gray ">对外渠道集成</span>
+              </li>
+            </ul>
+          </br>
+            <ul class="projectul">
+              <li>
+                <span class="projectitem">Newegg Marketplace</span></br>
+                <span>项目简介：<span class="itemdec">Newegg Marketplace 系统的研发和技术支持服务</span></span></br>
+                <span>项目角色：<span class="itemdec">小组Leader、主力开发、卖家技术支持</span></span></br>
+                <span>项目成果：<span></span>与小组一起完成US产品经理分配的开发任务，保证项目质量，稳定性和性能提升较大</span></br>
+                <span>项目标签：</span>
+                <span class="layui-badge layui-bg-gray ">微服务架构</span>
+                <span class="layui-badge layui-bg-gray ">.Net Core 3.1</span>
+                <span class="layui-badge layui-bg-gray ">K8S</span>
+                <span class="layui-badge layui-bg-gray ">SpringBoot</span>
+                <span class="layui-badge layui-bg-gray ">Vue、React</span>
+                <span class="layui-badge layui-bg-gray ">高并发</span>
+                <span class="layui-badge layui-bg-gray ">人员管理</span>
+                <span class="layui-badge layui-bg-gray ">项目管理</span>
+              </li>
+            </ul>
+          </br>
+            <ul class="projectul">
+              <li>
+                <span class="projectitem">Newegg Cross Border</span></br>
+                <span>项目简介：<span class="itemdec">Newegg 跨境物流项目，帮助中国卖家将货物由中国运输到全球</span></span></br>
+                <span>项目角色：<span class="itemdec">项目技术经理、全栈开发</span></span></br>
+                <span>项目成果：<span></span>主导该项目技术从零到一实现的全过程，并建立新的技术团队</span></br>
+                <span>项目标签：</span>
+                <span class="layui-badge layui-bg-gray ">微服务架构</span>
+                <span class="layui-badge layui-bg-gray ">.Net 4.8 /.Net Core 3.1</span>
+                <span class="layui-badge layui-bg-gray ">K8S</span>
+                <span class="layui-badge layui-bg-gray ">SpringBoot</span>
+                <span class="layui-badge layui-bg-gray ">Vue、React</span>
+                <span class="layui-badge layui-bg-gray ">人员管理</span>
+                <span class="layui-badge layui-bg-gray ">项目管理</span>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </br></br>
+
+        <li>
+          <span class="workname">果达侠科技有限公司</span>
+          <span class="workdate">2018年11月27-2020年12月1日 | 后端研发工程师</span></br></br>
+          <div class="projectnamediv">
+            <span class="projectname">参与的产品和项目</span></br></br>
+            <ul class="projectul">
+              <li>
+                <span class="projectitem">果达侠商城</span></br>
+                <span>项目简介：<span class="itemdec">面向各大水果店店长的水果采购批发平台</span></span></br>
+                <span>参与内容：<span class="itemdec">微服务架构中的服务开发</span></span></br>
+                <span>项目标签：</span>
+                <span class="layui-badge layui-bg-gray ">分布式架构</span>
+                <span class="layui-badge layui-bg-gray ">.Net Core 3.1</span>
+                <span class="layui-badge layui-bg-gray ">自研开发框架</span>
+              </li>
+            </br>
+              <li>
+                <span class="projectitem">无人车库系统</span></br>
+                <span>项目简介：<span
+                    class="itemdec">电动车无人值守车库，具有防盗、监控警报、自动开门、用户自助缴费、临停、扫码充电、包月充电、数据集中统计、多租户设计等功能</span></span></br>
+                <span>参与内容：<span class="itemdec">设计、开发、部署实施、运维</span></span></br>
+                <span>项目标签：</span>
+                <span class="layui-badge layui-bg-gray ">分布式架构</span>
+                <span class="layui-badge layui-bg-gray ">车库自动化</span>
+                <span class="layui-badge layui-bg-gray ">.Net Core</span>
+                <span class="layui-badge layui-bg-gray ">高性能Socket通讯</span>
+                <span class="layui-badge layui-bg-gray ">物联网开发</span>
+                <span class="layui-badge layui-bg-gray ">公众号</span>
+                <span class="layui-badge layui-bg-gray ">小程序</span>
+                <span class="layui-badge layui-bg-gray ">微信支付</span>
+              </li>
+            </br>
+              <li>
+                <span class="projectitem">汽车贷款业务系统</span></br>
+                <span>项目简介：<span class="itemdec">贷款业务内部员工资料上传、审核、存档系统</span></span></br>
+                <span>参与内容：<span class="itemdec">设计、开发、部署实施、运维</span></span></br>
+                <span>项目标签：</span>
+                <span class="layui-badge layui-bg-gray ">流程引擎</span>
+                <span class="layui-badge layui-bg-gray ">动态表单</span>
+                <span class="layui-badge layui-bg-gray ">小程序</span>
+              </li>
+            </ul>
+          </div>
+        </li></br></br>
+
+        <li>
+          <span class="workname">中际科技有限公司</span>
+          <span class="workdate">2017年6月-2018年10月 | 创业公司技术负责人</span></br></br>
+          <div class="projectnamediv">
+            <span class="projectname">参与的产品和项目</span></br></br>
+            <ul class="projectul">
+              <li>
+                <span class="projectitem">OneOffice</span></br>
+                <span>项目简介：<span
+                    class="itemdec">基于Office365进行二次开发，在手机小程序端同步、预览、编辑PC上的Office365文档并扩展企业OA功能</span></span></br>
+                <span>参与内容：<span class="itemdec">设计、开发、部署实施、运维</span></span></br>
+                <span>项目标签：</span>
+                <span class="layui-badge layui-bg-gray ">.Net</span>
+                <span class="layui-badge layui-bg-gray ">Azure AD</span>
+                <span class="layui-badge layui-bg-gray ">Azure Cloud</span>
+                <span class="layui-badge layui-bg-gray ">微信小程序</span>
+                <span class="layui-badge layui-bg-gray ">企业微信</span>
+              </li>
+              </br>
+              <li>
+                <span class="projectitem">ADM管理平台</span></br>
+                <span>项目简介：<span class="itemdec">微软AD活动目录Web管理系统，对AD管理进行包装，提供WebAPI开放平台</span></span></br>
+                <span>参与内容：<span class="itemdec">设计、开发、部署实施、运维</span></span></br>
+                <span>项目标签：</span>
+                <span class="layui-badge layui-bg-gray ">.Net</span>
+                <span class="layui-badge layui-bg-gray ">AD活动目录</span>
+                <span class="layui-badge layui-bg-gray ">军工企业实施</span>
+              </li>
+            </ul>
+          </div>
+        </li></br></br>
+
+
+        <li>
+          <span class="workname">东方闻道科技发展有限公司</span>
+          <span class="workdate">2016年3月-2017年6月 | 后端开发</span></br></br>
+          <div class="projectnamediv">
+            <span class="projectname">参与的产品和项目</span></br></br>
+            <ul class="projectul">
+              <li>
+                <span class="projectitem">未来课堂3.0</span></br>
+                <span>项目简介：<span class="itemdec">与成都七中老师合作以在线直播或者录制视频的方式远程教学，学生可以在线观看、课前预习、课后作业、远程考试等</span></span></br>
+                <span>参与内容：<span class="itemdec">后端开发</span></span></br>
+                <span>项目标签：</span>
+                <span class="layui-badge layui-bg-gray ">.Net</span>
+                <span class="layui-badge layui-bg-gray ">高性能</span>
+                <span class="layui-badge layui-bg-gray ">高并发</span>
+                <span class="layui-badge layui-bg-gray ">大数据存储</span>
+                <span class="layui-badge layui-bg-gray ">数据库优化</span>
+              </li>
+            </ul>
+          </div>
+        </li></br></br>
+
+
+        <li>
+          <span class="workname">东谷信息技术有限公司</span>
+          <span class="workdate">2013年11月-2016年3月 | 开发</span></br></br>
+          <div class="projectnamediv">
+            <span class="projectname">参与的产品和项目</span></br></br>
+            <ul class="projectul">
+              <li>
+                <span class="projectitem">峨眉山旅游集团OA系统</span></br>
+                <span>项目简介：<span class="itemdec">峨眉山旅游集团OA系统，包括人力资源管理、合同管理、车辆管理、会议室管理等</span></span></br>
+                <span>参与内容：<span class="itemdec">前后端开发</span></span></br>
+                <span>项目标签：</span>
+                <span class="layui-badge layui-bg-gray ">C#</span>
+                <span class="layui-badge layui-bg-gray ">easyUI</span>
+                <span class="layui-badge layui-bg-gray ">ASP.NET</span>
+              </li>
+            </br>
+              <li>
+                <span class="projectitem">公司外接项目</span></br>
+                <span>项目简介：<span class="itemdec">分到各个开发组，实现前端页面或者后端接口</span></span></br>
+                <span>参与内容：<span class="itemdec">前后端开发</span></span></br>
+                <span>项目标签：</span>
+                <span class="layui-badge layui-bg-gray ">C#</span>
+                <span class="layui-badge layui-bg-gray ">easyUI</span>
+                <span class="layui-badge layui-bg-gray ">ASP.NET</span>
+                <span class="layui-badge layui-bg-gray ">学习</span>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
   </div>
 </body>
+
 </html>
